@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Pro Pets
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pro Pets — это приложение для управления данными о питомцах и их статусом (Lost & Found). Оно предназначено для владельцев домашних животных, ветеринаров и организаций по уходу за животными, которые хотят легко отслеживать информацию о своих питомцах.
 
-## Available Scripts
+## Макеты
+- Mobile  - https://www.figma.com/design/3YXFaQbZi6wXLNmLacCQwM/Pawsome.world-App?node-id=0-1&t=JE6ogSka0xLnIVbB-0
+- Desktop - https://www.figma.com/design/meg6cKLymbvfIOKdygyZBb/Pawsome.world?node-id=62-1596&t=h6he3WgXuNzMqvqg-0
+- Landing - https://www.figma.com/design/16FhcOaks9LwDcE7g140ej/Pro-Pets-Final-Variation-(old)?node-id=0-1&t=Komql717TxotCiNF-0
 
-In the project directory, you can run:
+## Зависимости Dependencies
+- react / react-dom
+- react-hook-form
+- react-redux / redux / toolkit
+- react-router-dom
+- i18next (мультиязычность)
+- Axios (http запросы)
+- Toastify
+- React Paginate
+  
+## Функционал
+- Регистрация и управление статусом питомца (Lost & Found)
+- Регистрация и управление профилями питомцев
+- Отслеживание медицинских записей
+- Управление прививками и лечением
+- Напоминания о вакцинациях и визитах к ветеринару
+- Хранение фотографий питомцев
 
-### `npm start`
+## Установка
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/BytesHouse/pro-pets-node-js.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Зайдите в директорию и установите зависимости:
+   ```bash
+   cd pro-pets-node-js.git
+   npm install
+   ```
+3. Запуск приложения:
+   ```bash
+   npm start
+   ```
