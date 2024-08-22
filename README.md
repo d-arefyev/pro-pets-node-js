@@ -5,7 +5,7 @@ Pro Pets — это приложение для управления данны�
 ## Макеты
 - Mobile  - https://www.figma.com/design/3YXFaQbZi6wXLNmLacCQwM/Pawsome.world-App?node-id=0-1&t=JE6ogSka0xLnIVbB-0
 - Desktop - https://www.figma.com/design/meg6cKLymbvfIOKdygyZBb/Pawsome.world?node-id=62-1596&t=h6he3WgXuNzMqvqg-0
-- Landing - https://www.figma.com/design/16FhcOaks9LwDcE7g140ej/Pro-Pets-Final-Variation-(old)?node-id=0-1&t=Komql717TxotCiNF-0
+- Landing - https://www.figma.com/design/vmALiamXQlyUTwmjmxcSS5/Pro-Pets-Final-Variation-(old)-(Copy)?node-id=7-68&t=4rlKjrfp468aDyD3-0
 
 ## Зависимости Dependencies
 - react / react-dom
