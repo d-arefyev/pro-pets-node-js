@@ -1,0 +1,257 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables --------------------------------------------------- */
+
+:root {
+  --color-dark: #323131;
+  --color-light: #F3F2F2;
+
+  --color-dark-gray: #727575;
+  --color-middle-gray: #908A8A;
+  --color-light-gray: #E9E8E8;
+
+  --color-bg-input: #F4F4F4;
+
+  --color-dark-blue: #26506F;
+  --color-middle-blue: #50748E;
+  --color-light-blue: #6F8DA3;
+
+  --color-dark-green: #0AFF05;
+  --color-light-green: #0AFF051A;
+
+  --color-dark-red: #B7583A;
+  --color-middle-red: #FF855F;
+  --color-light-red: #D18F7A;
+
+  --color-rose: #FF7373;
+
+  --border-radius-small: 5px;
+  --border-radius-middle: 10px;
+  --border-radius-large: 15px;
+
+  --border: 1px solid var(--color-dark);
+
+  --box-shadow: 7px 7px 4px 0px #00000040;
+
+  --container-width: 1360px;
+  --container-padding-x: 15px;
+
+  --transition-duration: all 0.2s;
+}
+
+/* Global Styles --------------------------------------------------- */
+
+.globalContainer {
+  /* Ширина контейнара 1440px */
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  /* Центрирование контейнера по-центру */
+  margin-inline: auto;
+  /* 15px зона безопасности с обеих сторон */
+  padding-inline: var(--container-padding-x);
+
+  background-color: rgb(193, 251, 193);
+}
+
+body,
+html {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  /*0,7778 rem*/
+  font-weight: 400;
+  line-height: 18.2px;
+  color: var(--color-dark);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+a,
+Link,
+button,
+input,
+textarea,
+svg * {
+  transition: var(--transition-duration);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button,
+select,
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Normalise -------------------------------------------------- */
+/**
+  Нормализация блочной модели
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+    Убираем внутренние отступы слева тегам списков,
+    у которых есть атрибут class
+   */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+    Убираем внешние отступы body и двум другим тегам,
+    у которых есть атрибут class
+   */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/**
+    Убираем внешние отступы вертикали нужным тегам,
+    у которых есть атрибут class
+   */
+:where(h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+    Убираем стандартный маркер маркированному списку,
+    у которого есть атрибут class
+   */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/**
+    Обнуляем вертикальные внешние отступы параграфа,
+    объявляем локальную переменную для внешнего отступа вниз,
+    чтобы избежать взаимодействие с более сложным селектором
+   */
+p {
+  /* --paragraphMarginBottom: 24px; */
+
+  margin-block: 0;
+}
+
+/**
+    Внешний отступ вниз для параграфа без атрибута class,
+    который расположен не последним среди своих соседних элементов
+   */
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+
+/**
+    Упрощаем работу с изображениями
+   */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+    Наследуем свойства шрифт для полей ввода
+   */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+  height: 100%;
+}
+
+/**
+    Плавный скролл
+   */
+html,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+body {
+  /**
+      Пригодится в большинстве ситуаций
+      (когда, например, нужно будет "прижать" футер к низу сайта)
+     */
+  min-height: 100%;
+  /**
+      Унифицированный интерлиньяж
+     */
+  line-height: 1.5;
+}
+
+/**
+    Приводим к единому цвету svg-элементы
+   */
+svg *[fill] {
+  fill: currentColor
+}
+
+svg *[stroke] {
+  stroke: currentColor
+}
+
+/**
+    Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+   */
+svg * {
+  transition-property: fill, stroke;
+}
